@@ -28,7 +28,7 @@ La proposta è stata **accettata con condizioni** il 24 novembre 2026 (sintesi d
 | 25/11/2026 | Nucleo: consultazione, liste, editor, bozze, pubblicazione validata, voto, commento sulla proposta; il resto è estensione | rilievo sul perimetro troppo ampio |
 | 25/11/2026 | Proposta definitiva aggiornata e ricaricata | coerenza con i rilievi |
 | 25/11/2026 | Registrazione, accesso e logout nel nucleo (email e password); niente recupero password | autenticazione piccola, come chiesto |
-| 25/11/2026 | Un voto per ogni proposta, ritirabile finché la consultazione è aperta | — |
+| 25/11/2026 | Voto come valutazione da 1 a 5 stelle, a passi di mezza stella; una per proposta, modificabile o ritirabile finché la consultazione è aperta; ordinamento per media, a parità per numero di valutazioni; media calcolata nel front end | niente funzioni nel database |
 | 25/11/2026 | Commenti: modificabili ed eliminabili dal proprio autore finché la consultazione è aperta; moderazione del promotore come estensione | perimetro |
 | 25/11/2026 | Si eliminano solo le bozze; una proposta pubblicata non si elimina (ritiro come estensione) | perimetro; voti e commenti ricevuti |
 | 25/11/2026 | Consultazione chiusa automaticamente alla scadenza | la chiusura anticipata è un'estensione |

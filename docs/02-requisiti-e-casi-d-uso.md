@@ -8,8 +8,8 @@
 
 | Requisito del professore | Come lo soddisfa Placecraft | Casi d'uso |
 |---|---|---|
-| Una collezione listata, filtrata e ordinata | consultazioni (per comune e stato); proposte pubblicate (per costo; ordinate per voti, costo, data). Filtri nell'URL | UC2, UC3 |
-| Creare, modificare, eliminare, con persistenza | consultazioni; bozze (create, modificate, eliminate); voti (dati e ritirati); commenti (scritti, modificati, eliminati) | UC5, UC7, UC8, UC9 |
+| Una collezione listata, filtrata e ordinata | consultazioni (per comune e stato); proposte pubblicate (per costo; ordinate per valutazione media, costo, data). Filtri nell'URL | UC2, UC3 |
+| Creare, modificare, eliminare, con persistenza | consultazioni; bozze (create, modificate, eliminate); valutazioni (date, cambiate, ritirate); commenti (scritti, modificati, eliminati) | UC5, UC7, UC8, UC9 |
 | Dati dall'esterno | Nominatim e Overpass (UC9), prezzario regionale (UC5, UC6) | UC5, UC6, UC9 |
 | Regola che non può stare né nel client né nelle policy | `valida_proposta`: costo ricalcolato dal prezzario e perimetro controllato con PostGIS | UC6 |
 
@@ -28,16 +28,20 @@
 |---|---|---|---|
 | UC1 | Registrarsi, accedere, uscire | Visitatore / Cittadino | email e password con Supabase Auth; niente recupero password |
 | UC2 | Esplorare le consultazioni | Visitatore | elenco filtrabile per comune e stato (aperta/chiusa); filtri nell'URL |
-| UC3 | Vedere una consultazione e le sue proposte | Visitatore | perimetro, elementi esistenti, budget, scadenza; proposte pubblicate filtrabili per costo e ordinabili per voti, costo, data |
-| UC4 | Vedere una proposta | Visitatore | disegno sulla mappa, computo metrico voce per voce, numero di voti, commenti |
+| UC3 | Vedere una consultazione e le sue proposte | Visitatore | perimetro, elementi esistenti, budget, scadenza; proposte pubblicate filtrabili per costo e ordinabili per valutazione media, costo, data |
+| UC4 | Vedere una proposta | Visitatore | disegno sulla mappa, computo metrico voce per voce, valutazione media e numero di valutazioni, commenti |
 | UC5 | Creare o modificare una proposta | Cittadino | editor che parte dallo stato attuale: aggiungere dal catalogo, spostare, rimuovere; costo e avvisi a ogni mossa; la proposta resta una bozza, visibile solo all'autore, che può salvarla, riprenderla ed eliminarla |
 | UC6 | Pubblicare una proposta | Cittadino | il database esegue `valida_proposta`; se passa, la proposta diventa pubblica: non si modifica e non si elimina più |
-| UC7 | Votare una proposta | Cittadino | un voto per ogni proposta, non sulla propria; si può ritirare finché la consultazione è aperta |
+| UC7 | Valutare una proposta | Cittadino | da 1 a 5 stelle, a passi di mezza stella; una valutazione per proposta, non sulla propria; si può cambiare o ritirare finché la consultazione è aperta |
 | UC8 | Commentare una proposta | Cittadino | scrivere un commento sulla proposta; modificare ed eliminare i propri finché la consultazione è aperta |
 | UC9 | Aprire una consultazione | Promotore | ricerca con Nominatim, scelta da una lista; perimetro ed elementi da Overpass, copiati nel database; budget e scadenza; regione e anno del prezzario fissati ora |
 
 Una consultazione è **aperta** fino alla scadenza fissata dal promotore; dopo, il database rifiuta
-nuove pubblicazioni, voti e commenti (e la modifica o eliminazione dei commenti).
+nuove pubblicazioni, valutazioni e commenti, e la modifica o eliminazione di valutazioni e commenti.
+
+L'ordinamento per valutazione usa la media; a parità di media, prima la proposta con più
+valutazioni. Accanto alle stelle si mostra sempre il numero di valutazioni (es. «4,5 ★ (12)»). Media e
+ordinamento si calcolano nel front end.
 
 ## Estensioni
 
@@ -48,12 +52,12 @@ nuove pubblicazioni, voti e commenti (e la modifica o eliminazione dei commenti)
 | E3 | Ritirare una proposta pubblicata |
 | E4 | Rielaborare una proposta altrui, con la differenza elemento per elemento |
 | E5 | Commento ancorato a un elemento della proposta |
-| E6 | Sintesi per il promotore (elementi più richiesti e dove, costo medio, proposte più votate), calcolata nel front end |
+| E6 | Sintesi per il promotore (elementi più richiesti e dove, costo medio, proposte meglio valutate), calcolata nel front end |
 | E7 | Correzione dell'inventario da parte del promotore, bloccata dopo la prima proposta pubblicata |
 | E8 | Gestione della consultazione: modificare descrizione e scadenza, chiudere in anticipo |
 | E9 | Descrizione e foto dello spazio da Wikidata e Wikimedia Commons |
 | E10 | Proposte mostrate sulla mappa; filtri per elementi e autore |
-| E11 | Profilo: le proprie bozze, proposte, voti ricevuti, commenti |
+| E11 | Profilo: le proprie bozze, proposte, valutazioni ricevute, commenti |
 | E12 | Altre regioni (importazione di un altro prezzario) |
 
 La divisione segue la condizione del professore. Annulla/ripeti è un'estensione perché il professore

@@ -30,7 +30,6 @@ Strumento usato finora: Claude.
 
 | Data | Proposta | Decisione nostra e motivo |
 |---|---|---|
-| nov 2026 | Nella proposta, una frase su «dove, quanto e a quale costo» decide il cittadino | il budget lo fissa il promotore: il cittadino decide *che cosa* e *dove* |
 | nov 2026 | Dati precisi sui parchi dell'Aquila (quanti mappati, con nome, quali) | basta dire che i dati ci sono e sono verificati, senza numeri |
 | 25/11/2026 | Funzioni RPC nel database (calcolo del costo, sintesi, GeoJSON) | niente RPC: costo e sintesi nel front end, come chiesto dal professore sulle API |
 
@@ -44,8 +43,7 @@ Strumento usato finora: Claude.
 
 ## Regole che ci diamo
 
-- Il codice generato si legge e si capisce prima di entrare nel repository: alla discussione va
-  spiegato riga per riga.
+- Il codice generato si legge e si capisce prima di entrare nel repository
 - Ogni dato (prezzi, codici, fonti, norme) si verifica sulla fonte originale.
 - Credenziali, chiavi e dati personali non si incollano mai nell'assistente.
 - Restano nostri: il disegno dello stato dell'applicazione, dove vive lo stato, il modello dei

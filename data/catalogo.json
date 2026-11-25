@@ -1,0 +1,146 @@
+{
+ "fonte": "Prezzario Regione Abruzzo 2026, DGR n. 434 del 22/07/2026, BURAT Ordinario n. 31 del 05/08/2026",
+ "tipi": [
+  {
+   "tipo": "albero",
+   "nome": "Albero (latifoglia, circonferenza fusto 16–18 cm, messo a dimora)",
+   "voci": [
+    {
+     "codice": "ABR26_U.07.10.440.e",
+     "quantita": 1,
+     "prezzo_eur": 97.38,
+     "descrizione": "Piante con zolla, circonferenza del fusto 16÷18 cm: tilia americana"
+    }
+   ],
+   "costo_eur": 97.38,
+   "note": "Da confermare nel PDF che la voce U.07.10.440 includa la messa a dimora come la U.07.10.430."
+  },
+  {
+   "tipo": "panchina",
+   "nome": "Panchina anatomica, acciaio e listoni di pino, 189×80 cm",
+   "voci": [
+    {
+     "codice": "ABR26_U.06.10.170.10",
+     "quantita": 1,
+     "prezzo_eur": 375.1,
+     "descrizione": "Panchina anatomica senza braccioli con struttura in acciaio zincato sezione ad U e listoni in legno di pino trattati, di sezione 4,5x6 cm, ingombro totale 189x80 cm, altezza 93 cm, compreso ogni onere e magistero per la fornitura ed il posizionamento su pavimentazione o su tappeto erboso:"
+    }
+   ],
+   "costo_eur": 375.1,
+   "note": ""
+  },
+  {
+   "tipo": "cestino",
+   "nome": "Cestino 32 l con coperchio, su palo",
+   "voci": [
+    {
+     "codice": "ABR26_U.06.10.270.b",
+     "quantita": 1,
+     "prezzo_eur": 81.85,
+     "descrizione": "Cestino portarifiuti tondo in lamiera zincata punzonata e calandrata, capacità 32 l, con estremità superiore ribordata e fondello provvisto di fori per l'areazione ed eventuale scarico di acqua, diametro 300 mm, altezza 450 mm, con dispositivo meccanico di chiusura, compreso ogni onere e magistero per il fissaggio a palo, già montato, o a parete: in lamiera zincata: con coperchio"
+    },
+    {
+     "codice": "ABR26_U.06.10.310.b",
+     "quantita": 1,
+     "prezzo_eur": 19.64,
+     "descrizione": "Palo per cestino portarifiuti, diametro 60 mm, compreso ogni onere e magistero per la fornitura ed il posizionamento in pavimentazione o in tappeto erboso: in acciaio zincato: altezza totale 1200 mm"
+    }
+   ],
+   "costo_eur": 101.49,
+   "note": "Composizione di due voci."
+  },
+  {
+   "tipo": "fontanella",
+   "nome": "Fontanella in ghisa con vasca e rubinetto a pulsante",
+   "voci": [
+    {
+     "codice": "ABR26_U.06.10.510.a",
+     "quantita": 1,
+     "prezzo_eur": 472.71,
+     "descrizione": "Fontanella in fusione di ghisa verniciata, vasca di raccolta acqua e griglia, rubinetto in ottone a pulsante e tubi zincati per l'allacciamento del rubinetto, altezza 1250 mm, larghezza 400 mm, profondità 600 mm, peso 100 kg, fornita e posta in opera"
+    }
+   ],
+   "costo_eur": 472.71,
+   "note": "Escluso l'allaccio alla rete idrica."
+  },
+  {
+   "tipo": "rastrelliera",
+   "nome": "Portabiciclette 4 posti, acciaio zincato verniciato",
+   "voci": [
+    {
+     "codice": "ABR26_U.06.10.550.a",
+     "quantita": 1,
+     "prezzo_eur": 113.6,
+     "descrizione": "Portabiciclette interamente in acciaio zincato a caldo e verniciato RAL, con struttura di sezione rettangolare e tubi bloccaruota curvati, compreso ogni onere e magistero per la fornitura ed il posizionamento su pavimentazione o su tappeto erboso: 4 posti, lunghezza 1500 mm, larghezza 450 mm, altezza 250 mm"
+    }
+   ],
+   "costo_eur": 113.6,
+   "note": ""
+  },
+  {
+   "tipo": "tavolo",
+   "nome": "Tavolo pic-nic in legno con panche e schienale",
+   "voci": [
+    {
+     "codice": "ABR26_U.06.10.40.a",
+     "quantita": 1,
+     "prezzo_eur": 608.34,
+     "descrizione": "Tavolo pic-nic interamente in legno impregnato con panche fissate lateralmente, compreso ogni onere e magistero per la fornitura ed il posizionamento su pavimentazione o su tappeto erboso: in listoni di legno di Pino di Svezia sezione 4,5x9 cm, con panche complete di schienale, ingombro totale 189 x 150 cm, altezza tavolo 68 cm"
+    }
+   ],
+   "costo_eur": 608.34,
+   "note": "Sostituisce il gazebo, che nel prezzario non c'è."
+  },
+  {
+   "tipo": "lampione",
+   "nome": "Lampione fotovoltaico LED, palo 7 m",
+   "voci": [
+    {
+     "codice": "ABR26_EL.65.10.100.a",
+     "quantita": 1,
+     "prezzo_eur": 4838.39,
+     "descrizione": "Fornitura e posa in opera di lampione stradale fotovoltaico, con apparecchio stagno in alluminio pressofuso e vetro temperato per lampade a LED 24 W , modulo fotovoltaico policristallino da 150-180 Wp, batteria e centralina con regolatore caricabatteria e sezione programmabile per accensione lampada in cassetta metallica stagna, box metallico con attacco su palo per alloggiamento batteria e centralina, con palo rastremato e sbraccio di lunghezza 25 cm in acciaio S275JR secondo UNI EN 10025, laminato e zincato a caldo, comprensivo di quanto necessario all'installazione ed al bloccaggio del palo nel basamento questo escluso: con modulo fotovoltaico 150-180 Wp, batteria 12 V - 140 Ah, lampada a LED 24 W e quant'altro neccessario per un lavoro finito e funzionante a perfetta regola d'arte.: con palo lunghezza f.t. 7 m con corpo illuminante a 5 m diametro alla base 89 mm"
+    }
+   ],
+   "costo_eur": 4838.39,
+   "note": "Completo e autonomo: niente scavi né linea elettrica, adatto a un parco."
+  },
+  {
+   "tipo": "gioco",
+   "nome": "Area giochi base: scivolo + altalena a due posti",
+   "voci": [
+    {
+     "codice": "ABR26_U.06.10.640.a",
+     "quantita": 1,
+     "prezzo_eur": 320.49,
+     "descrizione": "Scivolo con struttura e scala in acciaio zincato e verniciato, protezione anticaduta al piano di calpestio in tubolare d'acciaio zincato, pista in vetroresina, conforme alle norme UNI EN 1176, in opera esclusi trattamento del suolo e pavimentazione speciale per l'area di gioco e di rispetto: altezza 1400 mm, lunghezza 1940 mm, dimensioni d'ingombro 2100x600 mm"
+    },
+    {
+     "codice": "ABR26_U.06.10.660.b",
+     "quantita": 1,
+     "prezzo_eur": 756.03,
+     "descrizione": "Altalena in legno di pino trattato composta da travi laterali di sostegno e trave superiore di sezione tonda diametro 140 mm, e seggiolini con catene in acciaio zincato a caldo a maglia antischiacciamento con movimento su boccole autolubrificanti, conforme alle norme UNI EN 1176, dimensioni d'ingombro 4000x2500x2600 mm, in opera esclusi trattamento del suolo e pavimentazione speciale per l'area di gioco e di rispetto: con due seggiolini a tavoletta in acciaio rivestiti in gomma antiurto delle dimensioni di 235x450x30 mm"
+    }
+   ],
+   "costo_eur": 1076.52,
+   "note": "Esclusi trattamento del suolo e pavimentazione antitrauma."
+  }
+ ],
+ "rimozioni": [
+  {
+   "tipo": "albero",
+   "nome": "Abbattimento di albero fino a 10 m",
+   "codice": "ABR26_U.07.10.270.a",
+   "prezzo_eur": 149.24
+  },
+  {
+   "tipo": "lampione",
+   "nome": "Rimozione di palo di illuminazione con corpo illuminante",
+   "codice": "ABR26_E.01.180.60.a",
+   "prezzo_eur": 285.81
+  }
+ ],
+ "senza_voce": [
+  "Rimozione di panchine, cestini, fontanelle, rastrelliere, tavoli e giochi: nel prezzario non c'è una voce specifica."
+ ]
+}

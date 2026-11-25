@@ -1,0 +1,38 @@
+# Comprende tutto il .gitignore generato da Vite (template react), più le righe nostre.
+
+# log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# dipendenze e build
+node_modules
+dist
+dist-ssr
+
+# variabili d'ambiente: MAI nel repository (il repository è pubblico).
+# Si versiona solo .env.example, con valori finti.
+*.local
+.env
+.env.*
+!.env.example
+
+# editor e sistema
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# PDF dei prezzari regionali: si scaricano dal sito della Regione e sono grandi.
+# (Gli altri PDF, per esempio la relazione in docs/, restano nel repository.)
+data/prezzari-pdf/

@@ -33,6 +33,8 @@ La proposta è stata **accettata con condizioni** il 24 novembre 2026 (sintesi d
 | 25/11/2026 | Si eliminano solo le bozze; una proposta pubblicata non si elimina (ritiro come estensione) | perimetro; voti e commenti ricevuti |
 | 25/11/2026 | Consultazione chiusa automaticamente alla scadenza | la chiusura anticipata è un'estensione |
 | 25/11/2026 | Editor e bozze in un solo caso d'uso; casi d'uso rinumerati: UC1–UC9 nucleo, E1–E12 estensioni | requisiti del 15/12 |
+| 25/11/2026 | Una sola bozza per consultazione; sezione «Le tue bozze» nella pagina della consultazione; salvataggio con il pulsante «Salva bozza»; titolo e descrizione obbligatori | il profilo è un'estensione |
+| 25/11/2026 | Elementi esistenti: rimuovibili e spostabili a costo zero; il budget copre solo gli elementi nuovi (ipotesi: il promotore riserva a parte una somma per rimozioni e spostamenti) | evita di modellare i costi di rimozione e spostamento |
 | 25/11/2026 | Prezzario usato come dato aperto, con la fonte citata; costo mostrato come «stima indicativa, IVA esclusa» | D.Lgs. 36/2023, All. I.14, art. 1 c. 2; verifica in [06](06-fonti-dati.md) |
 | 20/11/2026 | Una proposta pubblicata non si modifica: si rielabora | voti e commenti si riferiscono a quel disegno |
 | 20/11/2026 | La validità di una proposta la controlla il database (`valida_proposta`) | il client si può falsificare; le policy vedono una riga alla volta |
@@ -45,7 +47,7 @@ La proposta è stata **accettata con condizioni** il 24 novembre 2026 (sintesi d
 - [x] Licenza del prezzario (25/11, vedi [06](06-fonti-dati.md)); conferma della Regione solo se la chiede il professore
 - [x] Annulla/ripeti e Wikidata/Commons fra le estensioni (25/11)
 - [x] Una proposta pubblicata non si elimina; ritiro come estensione E3 (25/11)
-- [ ] Rimozioni di elementi esistenti senza voce di prezzario
+- [x] Rimozioni e spostamenti di elementi esistenti: costo zero, fuori budget (25/11)
 - [ ] Esclusioni da mostrare nel computo (es. allaccio idrico, pavimentazione antitrauma)
 - [ ] Voce U.07.10.440: include la messa a dimora?
 - [ ] `fetch` a mano o supabase-js in `src/api.js`

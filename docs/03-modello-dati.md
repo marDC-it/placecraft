@@ -15,7 +15,7 @@
 | **Elemento esistente** | elemento già presente nello spazio (da OSM; corretto dal promotore come estensione), con posizione | appartiene a una consultazione; ha un tipo |
 | **Proposta** | bozza o pubblicata; estensione: può rielaborarne un'altra (`rielabora_id`) | di un utente e di una consultazione; ha elementi, voti |
 | **Elemento della proposta** | un elemento aggiunto, spostato o rimosso, con posizione | appartiene a una proposta; ha un tipo; ha commenti |
-| **Voto** | un voto all'intera proposta | utente ↔ proposta, unico per coppia |
+| **Voto** | un voto all'intera proposta; si ritira finché la consultazione è aperta | utente ↔ proposta, unico per coppia |
 | **Commento** | nucleo: testo su una proposta; estensione: ancorato a un elemento | utente ↔ proposta; estensione: `elemento_id` facoltativo |
 
 ## Regole
@@ -29,11 +29,16 @@
 | Solo il promotore della consultazione modifica l'inventario (estensione) | policy |
 | Inventario bloccato dopo la prima proposta pubblicata (estensione) | policy / trigger |
 | Una proposta si modifica solo da bozza, e solo dall'autore | policy di `update`: `autore = auth.uid() and stato = 'bozza'` |
+| Si elimina solo una bozza, e solo dall'autore; una proposta pubblicata non si elimina | policy di `delete`: `autore = auth.uid() and stato = 'bozza'` |
+| Un voto si ritira solo dal suo autore e a consultazione aperta | policy di `delete` su voti |
+| Un commento si modifica o elimina solo dal suo autore e a consultazione aperta | policy di `update` e `delete` su commenti |
+| Dopo la scadenza: niente pubblicazioni, voti, commenti | policy: `now() < scadenza` della consultazione |
+| `is_promoter` non si modifica dall'app | `revoke update (is_promoter) on profiles from authenticated` |
 | Bozze visibili solo all'autore | policy di `select` |
 | Una proposta pubblicata è dentro il budget e dentro il perimetro | **`valida_proposta`** (funzione del database): ricalcola il costo da composizioni e prezzario e controlla con `ST_Contains` ogni elemento |
 
 ## Decisioni aperte
 
-- Eliminare una proposta pubblicata: proposta → solo se non ha voti né commenti, altrimenti «ritirata».
+- Ritirare una proposta pubblicata (estensione E3): che cosa succede a voti e commenti.
 - Rimozioni di elementi esistenti senza una voce di prezzario corrispondente: come conteggiarle.
 - Voci da confermare nel PDF (es. U.07.10.440: include la messa a dimora?).

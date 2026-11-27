@@ -45,26 +45,11 @@ cp .env.example .env.local   # poi inserisci URL e chiave publishable del proget
 npm run dev
 ```
 
-## Chiavi e dati sensibili
-
-Il repository è pubblico: niente segreti nei file versionati.
-
-- Le variabili d'ambiente stanno in `.env.local` (o `.env`), esclusi da `.gitignore`. Nel repository c'è
-  solo `.env.example`, con i nomi delle variabili e valori finti.
-- In produzione le variabili si inseriscono nel pannello di Vercel, non nel codice.
-- La chiave **publishable** di Supabase finisce comunque nel JavaScript pubblicato, ed è previsto: i dati
-  li proteggono le policy del database. La chiave **service_role** (segreta, ignora le policy) non va
-  **mai** né nel repository né in una variabile `VITE_`.
-- Niente dati personali di utenti reali negli script SQL o nei dati di esempio: solo account demo con
-  indirizzi fittizi (`@example.com`).
-
-Prima di ogni commit, `git status` non deve mostrare file `.env`.
 
 ## Tecnologie
 
 React 19, Vite, React Router, Context + useReducer, Supabase (PostgreSQL, PostgREST, Auth, PostGIS)
-fin dallo sviluppo, Vercel. Niente json-server: la validazione delle proposte è una funzione del
-database ed esiste solo su Supabase.
+fin dallo sviluppo, Vercel.
 
 ## Dati e attribuzioni
 
